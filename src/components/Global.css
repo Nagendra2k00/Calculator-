@@ -1,0 +1,67 @@
+.CalculatorWrapper {
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 400px;
+    margin: 100px auto;
+}
+
+.ButtonsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    margin-top: 20px;
+}
+
+.DisplayWrapper {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: #fff;
+    font-size: 2rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.ResultText {
+    color: #888;
+    font-size: 1.5rem;
+}
+
+.button-wrapper {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    padding: 20px;
+  }
+  
+  .button-wrapper.operator {
+    background-color: #f39c12;
+  }
+  
+  .button-wrapper.function {
+    background-color: #95a5a6;
+  }
+  
+  .button-wrapper.equals {
+    background-color: #27ae60;
+    grid-column: span 1;
+  }
+  
+  .button-wrapper.span-two {
+    grid-column: span 2;
+  }
+  
+  .button-wrapper:hover {
+    opacity: 0.8;
+  }
